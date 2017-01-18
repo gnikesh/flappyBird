@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flappy Bird | Nikesh</title>
+	<link href="css/reset.css" type="text/css" rel="stylesheet" media="screen">
+	<style type="text/css">
+		#bird{
+			width: 76px;
+			height: 53px;
+			border:none;
+			position: absolute;
+			/*z-index: 20;*/
+			background-image: url('images/bird.gif');
+		}
+
+		#obs{
+			width: 120px;
+			/*height: 200px;*/
+			/*z-index: 15;*/
+			border: 2px solid #513949;
+			border-top: none;
+			/*border-top: none;*/
+			position: absolute;
+			background: green;
+			background-image: url('images/pipes.png');
+			background-repeat: repeat-y;
+
+		}
+		#border{
+			width: 1024px;
+			height: 600px;
+			position: absolute;
+			overflow: hidden;
+			background: black;
+			border:2px solid #513949;
+			background-image: url('images/background.png');
+			background-position: all;
+
+		}
+
+		#score{
+			left: 50px;
+			color: white;
+			z-index: 100;
+			position: absolute;
+		}
+
+
+	</style>
+</head>
+<body>
+<div id = 'score'><h4 id = "scoreDisplay">SCORE: </h4></div>
+
+<div id = "border">
+	
+
+</div>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
